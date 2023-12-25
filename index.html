@@ -11,6 +11,8 @@
     <style>
         body
         {
+
+          scroll-behavior: smooth;
             margin:0;
             padding:0;
             box-sizing:border-box;
@@ -45,7 +47,7 @@
               display: block;  
              /* border : 3px solid red ;  */
             width: 50% ;
-            margin: -100px auto ;
+            margin:0px auto ;
             text-decoration:double;
             margin-right: 12px;
             
@@ -92,7 +94,6 @@
            text-align:center;
            margin: 25% auto ;
            
-          
            
      }
      #intro span
@@ -161,6 +162,7 @@
      }
      .formss
      {
+      border:8px solid red;
         padding-left: 40%;
      }
      .footer {
@@ -169,8 +171,22 @@
   padding: 3px;
      margin-left:0px;
   background-color: rgb(225, 220, 60);
-  color: black ;
-  
+  color: black ; 
+}
+.links a
+{
+  color:white;
+  margin: 20px;
+}
+#button1 {
+  font-family: 'Poppins', sans-serif ;
+  color:white;
+   background-color: red;
+   border: 3px solid white;
+   border-radius:8px;
+   width:100px;
+   height:30px;
+
 }
     </style>
     <script>
@@ -185,7 +201,7 @@
         }
         </script>
 </head>
-
+<div class="loader"></div>
 <header>
     <div id="header">
         <div >
@@ -213,7 +229,11 @@
         </nav>
         </div>
     </header>
+
     <body>
+      <div class="sound">
+        <audio controls autoplay loop src="_Relief_Instagram_Music_Hangover_Instrumental_Ringtone_(by Fringster.com).mp3"></audio>
+      </div>
       <div id="home">
         <div id="intro">
             <h1>Hello , I am<span> Shaunak</span>,@Shaun speaks<br>where desire meets passion</h1>
@@ -235,50 +255,49 @@
         </div>
     </div>
         <br>
-        
+       <div class="links" >
     <a href="https://www.facebook.com/profile.php?id=100095257614531" class="links" target = "_blank">Go to facebook  <br></a> 
        <!-- _blank for open website in new page  --> 
    <a href="https://www.linkedin.com/in/shaunak-majumdar-b65b462a3/" class="links" target = "_blank">Go to linkedin<br></a>
    <a href="https://www.instagram.com/shaunak_majumdar/" class="links" target = "_blank">Go to instagram  </a>
+  </div>
    <div id ="forms">
-   <form action="backend.php">
+   <form action="https://formsubmit.co/onlyshaun17@email.com" method="POST">
     <div style ="border:8px solid red;" class="formss">
-      Name <input type = "text" name = "myName"
+      Name <input type = "text" name = "myName" placeholder="yourname"
     </div>
     <br>
     <div class="entireform">
-      Rollno <input type = "text" name = "myRoll"
+      phoneno <input type = "number" name = "myPhone"  placeholder="yourphoneno"
     </div><br>
     <div class="entireform">
-      Email <input type = "email" name = "myemail"
+      Email <input type = "email" name = "myemail"  placeholder="yourmail"
     </div>
     <div class="entireform">
       Gender: Male<input type = "checkbox"> FeMale<input type = "checkbox">  Other<input type = "checkbox">
     </div>
     <div class="entireform">
-      <label for = "car">Car</label>
-       <select name = "myCar" id = "car">
-        <option value = "in">Indica</option>
-        <option value = "in">Swift</option>
-       </select>
+      <label for = "car">Transport</label>
+       <select name = "myTransport" id = "transport">
+        <option value = "in">2-wheeler</option>
+        <option value = "in">4-wheeler</option>
+       </select> 
 
-    </div>
-    <div class="entireform">
-      <input type= “reset” value = "Reset now"
+    <!-- </div> -->
+    <!-- <div class="entireform">
+      <input type= “reset” value = "Reset"> -->
 </div>
 <div class="entireform">
-  Message section:<br><textarea name = "mytext" rows="30" cols="70"></textarea>
+  Message section:<br><textarea name = "mytext" rows="10" cols="50"></textarea>
 </div>
 
-    <div class="entireform">
-      <input type = "submit" value = "submit now"
+    <div class="entireform" >
+      <button id ="button1" type= "submit">SUBMIT</button>
     </div>
-
-    
-    
    </form><br>
 </div>
-</div> 
+</div>    
+</script>
 <div class="footer">
   <p><h2>>Author: shaunak-majumdar.....</h2> All rights reserved including copyright,patents....<br>
   <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTRsZJmBJRXLCnMmVJZtkJBtkPWKZfdPPxfSrKZptDqnswkngksFGdKBkmMTtSBrMNmpFB" target="blank"><h2>Mail us for further queries</h2>
