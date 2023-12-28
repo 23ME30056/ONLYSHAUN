@@ -22,7 +22,7 @@
           height:100vh ;
           width:100%;
          background-image: url('bubuonly.jpg');
-        background-size:cover;
+         background-size: contain; 
         background-position: center; 
        }   
       
@@ -164,6 +164,7 @@
      {
       border:8px solid red;
         padding-left: 40%;
+        
      }
      .footer {
       width:100% ;
@@ -187,6 +188,9 @@
    width:100px;
    height:30px;
 
+}
+.formtext textarea{
+  padding-left:auto;
 }
     </style>
     <script>
@@ -267,16 +271,16 @@
       Name <input type = "text" name = "myName" placeholder="yourname"
     </div>
     <br>
-    <div class="entireform">
+    <div >
       phoneno <input type = "number" name = "myPhone"  placeholder="yourphoneno"
     </div><br>
-    <div class="entireform">
+    <div >
       Email <input type = "email" name = "myemail"  placeholder="yourmail"
     </div>
-    <div class="entireform">
+    <div >
       Gender: Male<input type = "checkbox"> FeMale<input type = "checkbox">  Other<input type = "checkbox">
     </div>
-    <div class="entireform">
+    <div >
       <label for = "car">Transport</label>
        <select name = "myTransport" id = "transport">
         <option value = "in">2-wheeler</option>
@@ -287,11 +291,11 @@
     <!-- <div class="entireform">
       <input type= “reset” value = "Reset"> -->
 </div>
-<div class="entireform">
-  Message section:<br><textarea name = "mytext" rows="10" cols="50"></textarea>
+<div class="formtext">
+  Message section:<br><textarea name = "mytext" rows="10" cols="20"></textarea>
 </div>
 
-    <div class="entireform" >
+    <div  >
       <button id ="button1" type= "submit">SUBMIT</button>
     </div>
    </form><br>
